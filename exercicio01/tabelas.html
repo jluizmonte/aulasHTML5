@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <link rel="icon" href="files/fedora.png">
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+          <li> <a href="index.html">Home</a> </li>
+          <li><a href="files/images.html">Imagens</a></li>
+          <li><a href="contact.html">Contato</a></li>
+          <li><a href="tabelas.html">Tabelas</a></li>
+        </ul>
+      </nav>
+    <table>
+        <caption>Produzidos x Vendidos por loja</caption>
+
+        <colgroup>
+            <col>
+            <col span="2" style="background-color: brown">
+            <col span="2" style="background-color: blue;">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <!--nomes das lojas-->
+                <th rowspan="2"></th>
+                <th colspan="2" scope="colgroup">Afonso Pena</th>
+                <th colspan="2" scope="colgroup">Antônia Pereira</th>
+            </tr>
+
+            <tr>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Vassouras</th>
+                <td>50</td>
+                <td>24</td>
+                <td>132</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <th scope="row">Baldes</th>
+                <td>23</td>
+                <td>32</td>
+                <td>54</td>
+                <td>10</td>
+
+            </tr>
+
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+</body>
+
+</html>
