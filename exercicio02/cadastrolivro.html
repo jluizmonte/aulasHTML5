@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Livro | Acervo</title>
+    <link rel="icon" href="assets/images/logo-only.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastrolivro.html">Cadastrar Livro</a></li>
+                <li><a href="descricaoLivro.html">Visualizar Livro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="formularioLivro">
+        <fieldset>
+            <legend>Cadastro de livros</legend>
+            <form method="" action="">
+                <label for="titulo">Título do livro</label>
+                <input required id="titulo" type="text" maxlength="250">
+                <br>
+                <label for="autores">Autor(es)</label>
+                <input required type="text" maxlength="250">
+
+                <label for="ano">Ano de lançamento</label>
+                <input required id="ano" type="text">
+
+                <label for="categoria">Categoria</label>
+                <select required name="listacategoria" id="categoria" aria-placeholder="Selecione uma categoria">
+                    <option value="">Selecione uma categoria</option>
+                    <option value="estudo">Estudo</option>
+                    <option value="codificacao">Codificação</option>
+                    <option value="romance">Romance</option>
+                    <option value="infanto">InfantoJuvenil</option>
+                    <option value="mensagem">Mensagem</option>
+                    <option value="outra">Outra</option>
+                </select>
+                <label for="datacadastro">Data Cadastro</label>
+                <input required id="datacadastro" type="date">
+
+                <label for="quantidade">Quantidade</label>
+                <input required id="quantidade" value="quantidade" type="number" maxlength="3" size="3">
+
+                <label for="observacao">Observações</label>
+                <textarea spellcheck="false" required id="observacao" rows="5" cols="20"></textarea>
+
+                <input type="reset" value="cancelar">
+                <input type="submit" value="Salvar livro">
+            </form>
+        </fieldset>
+
+    </div>
+</body>
+
+</html>
